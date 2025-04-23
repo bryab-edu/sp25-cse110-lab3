@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
     <!-- creative little header with meeting topic -->
     <div class="top-head">
         <h1 class="header-text">
@@ -20,61 +21,45 @@
         </h4>
     </div>
 
+    <header> <!-- /* Page header with nav */ -->
+        <nav> <!-- /* Navigation bar */ -->
+            <ul>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#misc">Misc</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
 
     <!-- adds checkboxes to check in for attendance -->
-    <div class="attendance"> 
-        <span>
-            <input type="checkbox" id="alec-d" name="Alec Drumm" checked/>
-            <label for="alec-d">Alec Drumm</label>
-        </span>
-        <span>
-            <input type="checkbox" id="alec-f" name="Alec Fong" checked/>
-            <label for="alec-f">Alec Fong</label>
-        </span>
-        <span>
-            <input type="checkbox" id="andrea" name="Andrea Calderon" checked/>
-            <label for="andrea ">Andrea Calderon</label>
-        </span>
-        <span>
-            <input type="checkbox" id="bryan" name="Bryan Canonizado" checked/>
-            <label for="bryan">Bryan Canonizado</label>
-        </span>
-        <span>
-            <input type="checkbox" id="cesar" name="Cesar Lopez" checked/>
-            <label for="cesar">Cesar lopez</label>
-        </span>
-        <span>
-            <input type="checkbox" id="diego" name="Diego Otero-Caldwell" checked/>
-            <label for="diego">Diego Otero-Caldwell</label>
-        </span>
-    </div>
-    <br>
-    <div class="attendance">
-        <span>
-            <input type="checkbox" id="jonathan" name="Jonathan Cui" checked/>
-            <label for="jonathan">Jonathan Cui</label>
-        </span>
-        <span>
-            <input type="checkbox" id="joshua" name="Joshua Castaneda" checked/>
-            <label for="joshua">Joshua Castaneda</label>
-        </span>
-        <span>
-            <input type="checkbox" id="nelson" name="Nelson Chen" checked/>
-            <label for="nelson">Nelson Chen</label>
-        </span>
-        <span>
-            <input type="checkbox" id="nicholas" name="Nicholas Chan" checked/>
-            <label for="nicholas">Nicholas Chan</label>
-        </span>
-        <span>
-            <input type="checkbox" id="tony-ta" name="Tony Li" checked/>
-            <label for="tony-ta">Tony Li</label>
-        </span>
-        <span>
-            <input type="checkbox" id="travis" name="Travis Nguyen" checked/>
-            <label for="travis">Travis Nguyen</label>
-        </span>
-    </div>
+    <section id="attendance"> <!-- /* Attendance section with table */ -->
+        <h3>Attendance</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Present</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Alec Drumm</td><td><input type="checkbox" checked></td></tr>
+                <tr><td>Alec Fong</td><td><input type="checkbox" checked></td></tr>
+                <tr><td>Andrea Calderon</td><td><input type="checkbox" checked></td></tr>
+                <tr><td>Bryan Canonizado</td><td><input type="checkbox" checked></td></tr>
+                <tr><td>Cesar Lopez</td><td><input type="checkbox" checked></td></tr>
+                <tr><td>Diego Otero-Caldwell</td><td><input type="checkbox" checked></td></tr>
+                <tr><td>Jonathan Cui</td><td><input type="checkbox" checked></td></tr>
+                <tr><td>Joshua Castaneda</td><td><input type="checkbox" checked></td></tr>
+                <tr><td>Nelson Chen</td><td><input type="checkbox" checked></td></tr>
+                <tr><td>Nicholas Chan</td><td><input type="checkbox" checked></td></tr>
+                <tr><td>Tony Li</td><td><input type="checkbox" checked></td></tr>
+                <tr><td>Travis Nguyen</td><td><input type="checkbox" checked></td></tr>
+            </tbody>
+        </table>
+
 
     <form method="get" class="attendance-form">
         <span>
@@ -140,5 +125,11 @@
             Chicken Jockey
     </details>
 
+
+    <footer> <!-- /* Footer with basic info */ -->
+        <p>&copy; 2025 CSE 110 Group 1 | UCSD</p>
+    </footer>
+
+    
 </body>
 </html>
