@@ -4,35 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Missed a Meeting?</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-    <table>
-        
-    </table>
-    <div>
-        <h1>
+    <!-- creative little header with meeting topic -->
+    <div class="top-head">
+        <h1 class="header-text">
             CSE 110 Group 1 Minutes
         </h1>
-        <h3>
+        <h3 class="date" >
             Apr 11, 2025
         </h3>
-        <h4>
+        <h4 style="color: white;">
             check-ins, role distribution & further introductions, ice breakers
         </h4>
     </div>
-    
-    <form method="get">
-        <div>
-          <label>Enter your name: </label>
-          <input type="text"/>
-        </div>
-        <diV>
-          <input type="submit" value="Here!" />
-        </div>
-      </form>
 
-    <div>
+
+    <!-- adds checkboxes to check in for attendance -->
+    <div class="attendance"> 
         <span>
             <input type="checkbox" id="alec-d" name="Alec Drumm" checked/>
             <label for="alec-d">Alec Drumm</label>
@@ -43,7 +33,7 @@
         </span>
         <span>
             <input type="checkbox" id="andrea" name="Andrea Calderon" checked/>
-            <label for="andrea">Andrea Calderon</label>
+            <label for="andrea ">Andrea Calderon</label>
         </span>
         <span>
             <input type="checkbox" id="bryan" name="Bryan Canonizado" checked/>
@@ -59,7 +49,7 @@
         </span>
     </div>
     <br>
-    <div>
+    <div class="attendance">
         <span>
             <input type="checkbox" id="jonathan" name="Jonathan Cui" checked/>
             <label for="jonathan">Jonathan Cui</label>
@@ -86,6 +76,17 @@
         </span>
     </div>
 
+    <form method="get" class="attendance-form">
+        <span>
+          <label>Enter your name: </label>
+          <input type="text"/>
+        </span>
+        <span>
+          <input type="submit" value="Here!" />
+        </span>
+    </form>
+
+<!-- to-do list for the meeting -->
         <h3>Agenda</h3>
         <ol>
             <li>Attendance</li>
@@ -96,15 +97,7 @@
             <li>Task Distribution</li>
 
         </ol>
-
-
-    <div>
-        <h3>unfinished business</h3>
-        <p>
-            snl skit sunday (unfunny)
-        </p>
-    </div>
-
+<!-- plans and assessments -->
         <h3>new business</h3>
         <ol>
             <li>pyramid scheme tactics</li>
@@ -112,26 +105,34 @@
         <ul>
             <li>fart spray industry</li>
         </ul>
-
+    
+        <div>
+            <h3>unfinished business</h3>
+            <p>
+                snl skit sunday (unfunny)
+            </p>
+        </div>
+<!-- FAQs during meeting -->
     <div>
         <h3>misc mentioned</h3>
         <h4>"I wanna be a 10x developer!"</h4>
-        <p>no</p>
-        <h4>19 dollar fortnite giftcard</h4>
+        <p style="display: flex;">no</p>
+        <h4>19 dollar fortnite giftcard?</h4>
         <p>who wants it?</p>
     </div>
-
+<!-- Visual reperesentation of meeting  -->
     <div>
         <h3>Presented Images/Diagrams</h3>
         <h4>Group Photo!</h4>
         <img src="/images/fake-art.jpeg" height="250" alt="fart">
     </div>
-
-        <h3>video evidence of meeting</h3>
+<!-- media produced during meeting -->
+        <h3 style="display: block">video evidence of meeting</h3>
             <video controls src="/videos/funny2.mp4" width="250"></video>
-        <h5>podcast version</h5>
+<!-- audio file to listen to meeting details -->
+            <h5>podcast version</h5>
             <audio controls src="/videos/funny3.mp3"></audio>
-        
+<!-- important info/to-do in meeting -->
     <details>
         <summary>
             ATTENTION FOR ALL ATTENDEES
